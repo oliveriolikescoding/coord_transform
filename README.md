@@ -75,3 +75,12 @@ python points.py --input cities.csv --convert wgs2gcj --map   # 转换后再出�
 - GCJ-02 反解为单次近似反解，不是迭代解，残差不保证在厘米级
 - 转换不写逐条日志，只有终端汇总计数
 - `四川省.geojson` 界线非法定界线，示例图无审图号，非标准地图
+
+## 依赖
+
+```bash
+pip install -r requirements.txt
+```
+
+版本为本机实跑环境（geopandas 0.14.4 / pandas 3.1.1 / matplotlib 3.11.2），由脚本里 `import` 反推，不是照着通用模板写的。
+GDAL 由 geopandas 的 wheel 自带，不需要另装。
